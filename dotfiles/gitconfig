@@ -1,0 +1,8 @@
+[user]
+	name = Dmitry Nets
+	email = dmitrynets@gmail.com
+	username = dnets
+[core]
+	editor = vim
+	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	excludesfile = ~/.gitignore
