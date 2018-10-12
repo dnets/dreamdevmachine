@@ -78,6 +78,17 @@ confirm_yes "Install VIM? " && pkg_install vim
 confirm_yes "Install VIM extensions? " && install_vim_extensions
 read -n 1 -s -r -p "Press any key..."
 
+clear
+echo "_________ .__                   .___________ ";
+echo "\_   ___ \|  |   ____  __ __  __| _/   __   \\";
+echo "/    \  \/|  |  /  _ \|  |  \/ __ |\____    /";
+echo "\     \___|  |_(  <_> )  |  / /_/ |   /    / ";
+echo " \______  /____/\____/|____/\____ |  /____/  ";
+echo "        \/                       \/          ";
+confirm_yes "Copy AWS Cloud9 configs?" && install_c9
+read -n 1 -s -r -p "Press any key..."
+
+
 # Exit
 clear
 echo "All done. Happy coding!";
