@@ -12,6 +12,7 @@ DIR=`dirname "${THIS}"`
 . "$DIR/scripts/install/install-bash-it.sh"
 . "$DIR/scripts/install/install-oh-my-zsh.sh"
 . "$DIR/scripts/install/install-vim-extensions.sh"
+. "$DIR/scripts/install/install-git.sh"
 . "$DIR/scripts/helpers/confirm.sh"
 . "$DIR/scripts/helpers/makesymlinks.sh"
 . "$DIR/scripts/helpers/pkg_install.sh"
@@ -79,15 +80,12 @@ confirm_yes "Install VIM extensions? " && install_vim_extensions
 read -n 1 -s -r -p "Press any key..."
 
 clear
-echo "_________ .__                   .___________ ";
-echo "\_   ___ \|  |   ____  __ __  __| _/   __   \\";
-echo "/    \  \/|  |  /  _ \|  |  \/ __ |\____    /";
-echo "\     \___|  |_(  <_> )  |  / /_/ |   /    / ";
-echo " \______  /____/\____/|____/\____ |  /____/  ";
-echo "        \/                       \/          ";
-confirm_yes "Copy AWS Cloud9 configs?" && install_c9
-read -n 1 -s -r -p "Press any key..."
-
+echo "        ";
+echo " _  ._/_";
+echo "/_// /  ";
+echo "_/      ";
+echo "        ";
+confirm_yes "Configure git credentials?" && install_git
 
 # Exit
 clear
